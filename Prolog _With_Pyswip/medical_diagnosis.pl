@@ -18,7 +18,6 @@ symptom(headache).
 symptom(tooth_pain).
 symptom(postnasal_drip).
 
-% Duration categories
 duration(acute).
 duration(chronic).
 
@@ -26,7 +25,7 @@ duration(chronic).
 :- dynamic patient_symptom/2.
 :- dynamic patient_symptom_duration/2.
 
-% DIAGNOSTIC RULES - More Flexible (requires 2 out of 3-4 symptoms)
+% DIAGNOSTIC RULES
 
 % Rule 1: Chronic Sinusitis (needs duration + 2 of 3 main symptoms)
 chronic_sinusitis(Patient) :-

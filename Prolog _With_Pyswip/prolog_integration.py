@@ -4,12 +4,11 @@ prolog = Prolog()
 prolog.consult("medical_diagnosis.pl")
 
 def clear_patient(patient_id):
-    """Clear patient data"""
+  #clearning patient data
     list(prolog.query(f"retractall(patient_symptom({patient_id}, _))"))
     list(prolog.query(f"retractall(patient_symptom_duration({patient_id}, _))"))
 
 def add_symptoms(patient_id, symptoms, duration=None):
-    """Add symptoms for a patient"""
     clear_patient(patient_id)
     
     # Add symptoms
@@ -23,7 +22,6 @@ def add_symptoms(patient_id, symptoms, duration=None):
         list(prolog.query(query))
 
 def diagnose(patient_id, symptoms, duration=None, discharge_types=None):
-    """Get diagnosis for patient"""
     # Add symptoms to knowledge base
     add_symptoms(patient_id, symptoms, duration)
     
@@ -31,7 +29,6 @@ def diagnose(patient_id, symptoms, duration=None, discharge_types=None):
     diagnoses = []
     
     try:
-        # Try each diagnosis rule
         if list(prolog.query(f"chronic_sinusitis({patient_id})")):
             diagnoses.append("Chronic Sinusitis")
         
