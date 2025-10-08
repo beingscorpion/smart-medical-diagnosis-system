@@ -4,7 +4,7 @@ This smart medical diagnosis system is implement using two different approach.
 
 1)for Prolog pyswip and streamlit approach:
 Critical Prerequisite 
-![Prolog Based System Screenshot](https://raw.githubusercontent.com/beingscorpion/smart-medical-diagnosis-system/Prolog%20_With_Pyswip/Prolog_based.png)
+![Prolog Based System Screenshot](Prolog _With_Pyswip/Prolog_based.png)
 
 The system requires the SWI-Prolog Interpreter to be installed on your operating system.
 
