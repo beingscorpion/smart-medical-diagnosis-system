@@ -1,4 +1,9 @@
-Critical Prerequisite
+This smart medical diagnosis system is implement using two different approach. 
+1) Prolog integration with pyswip and streamlit which is complex and hard to understand.
+2) Rule based using Experta.: While Prolog is philosophically the perfect language for pure logical inference, experta provides a highly functional, declarative rule system entirely within the modern Python application stack.
+
+1)for Prolog pyswip and streamlit approach:
+Critical Prerequisite 
 
 The system requires the SWI-Prolog Interpreter to be installed on your operating system.
 
@@ -13,3 +18,14 @@ python -m venv krr_env
 pip install --upgrade pip 
 pip install -r requirements.txt
 streamlit run app.py
+
+----------------------------------------------------------------------------------------------------------------
+2)Experta Rule based system:
+
+Copy and paste them on vs code terminal
+
+python -m venv krr_env 
+.\krr_env\Scripts\activate
+pip install --upgrade pip 
+pip install experta
+streamlit run ./mini_project.py
