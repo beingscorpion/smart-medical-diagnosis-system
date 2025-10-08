@@ -1,6 +1,3 @@
-You can copy and paste the content below directly into a file named **`README.md`** in the root of your repository. I've used **Markdown** for professional formatting and **corrected the terminal commands** for robustness.
-
-
 # 🧠 Smart Medical Diagnosis System
 
 This project showcases a rule-based expert system implemented using two distinct technologies to perform differential diagnosis for ENT (Ear, Nose, and Throat) conditions.
