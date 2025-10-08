@@ -5,6 +5,7 @@ This smart medical diagnosis system is implement using two different approach.
 1)for Prolog pyswip and streamlit approach:
 Critical Prerequisite 
 
+
 The system requires the SWI-Prolog Interpreter to be installed on your operating system.
 
 Download Link (Windows x64): https://www.swi-prolog.org/download/stable/bin/swipl-9.2.9-1.x64.exe
